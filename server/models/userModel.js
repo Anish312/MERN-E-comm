@@ -23,16 +23,14 @@ const userSchema = mongoose.Schema({
     },
      role: {
         type:String,
-        required: true
+        default: "admin",
     },
     avatar: {
         public_id: {
             type:String,
-            required: true
         },
         url: {
             type:String,
-            required: true
         }
     },
    
